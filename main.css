@@ -1,0 +1,95 @@
+:root {
+  --color-base-fundo: #212121;
+  --my-color: #ffb923;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: var(--color-base-fundo);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h4 {
+  text-align: center;
+}
+
+img {
+  width: 300px;
+  overflow: hidden;
+}
+
+#containerPortifolio {
+  width: 300px;
+}
+
+#containerCard {
+  height: 158px;
+  width: 300px;
+}
+
+.card .legenda {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  height: 150px;
+
+  /*
+  gap: 40px;
+  */
+}
+
+.card img {
+  transition: filter 0.3s ease-in-out;
+}
+
+.card:hover .legenda {
+  opacity: 1;
+}
+
+.card:hover img {
+  filter: blur(2px) brightness(70%);
+}
+
+.legenda {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#redesSociais {
+  display: flex;
+  justify-content: space-around;
+}
+#redesSociais a {
+  padding: 5px 22px;
+  border: var(--my-color) solid 2px;
+}
+
+.social {
+  text-decoration: none;
+  color: #fff;
+}
+
+.legenda #text {
+  text-align: justify;
+  width: 280px;
+}
